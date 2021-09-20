@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Recipe Diary</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<link rel="stylesheet" href="stylesheet.css">
+<script src="jquery.min.js"></script>
+</head>
+<body>
+    <div class="stoker">
+        🍲
+    </div>
+
+    <section class="hero">
+        <video class="main-visual" loop>
+            <source src="./videos/sea.mp4" type="video/mp4">
+        </video>
+    
+        <div class="app-container">
+
+            <div class="track-wrapper">
+                <audio class="song" loop>
+                    <source src="./sounds/wave.mp3" />
+                </audio>
+                <img src="./svg/play.svg" alt="play" class="play">
+                <svg class="track-outline" width="200" height="200" viewBox="-25 -25 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+                </svg>
+                <svg class="moving-outline" width="200" height="200" viewBox="-25 -25 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+                </svg>
+                
+            </div>
+            <h3 class="time-display">0:00</h3> 
+            <div class="sound-button-wrapper">
+                <button class="sunny" data-sound="./sounds/wave.mp3" data-video="./videos/sea.mp4">
+                    <img class="sunny__image" src="icon/sunny.svg" alt="晴れ">
+                </button>
+                <button class="rain" data-sound="./sounds/rain.mp3" data-video="./videos/rain.mp4">
+                    <img class="rain__image" src="icon/rain.svg" alt="雨">
+                </button>
+            </div>
+            
+            <div class="time-select">
+                <button data-time="120">2分</button><button data-time="300">5分</button><button data-time="600">10分</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="guide">
+        <h2 class="guide__head">Recipe Diary</h2>
+        <p class="guide__greet">日々の料理レシピをまとめています。<br>
+                                和食や洋食、中華、お菓子までいろいろな料理レシピをアップしていますので、<br>
+                                みなさんの献立にお役立てくださいね!
+        </p>
+    </section>
+
+    <section class="picture">
+        <ul class="picture__inner">
+            <li class="picture__first"><figure><img class="picture__left" src="images/saraudon.JPG" alt="皿うどん"></figure></li>
+            <li class="picture__second"><figure><img class="picture__center" src="images/pho.jpg" alt="フォー"></figure></li>
+            <li class="picture__third"><figure><img class="picture__right" src="images/stoneRoastedBibimbap.JPG" alt="石焼きビビンバ"></figure></li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <button class="tolist">レシピ一覧を見る</button>
+        <div class="link">
+            <a class="insta" href="">instagram</a><a class="twitter" href="">Twitter</a><a class="facebook" href="">Facebook</a>
+        </div>
+        <div class="copyright">© 2021 Recipe Diary</div>
+    </footer>
+
+    
+
+<script src="script.js"></script>
+</body>
+</html>
